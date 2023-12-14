@@ -33,7 +33,7 @@ This will collect traces from application and captures at the collector port.
 # Expose services using kubectl port-forward
 To expose the frontendproxy service use the following command (replace my-otel-demo with your Helm chart release name accordingly):
 
-# kubectl port-forward svc/opentelemetry-demo-frontendproxy 8080:8080 -n otel-demo 
+   kubectl port-forward svc/opentelemetry-demo-frontendproxy 8080:8080 -n otel-demo 
 
 Note: kubectl port-forward will proxy the port until the process terminates. You may need to create separate terminal sessions for each use of kubectl port-forward, and use Ctrl-C to terminate the process when done.
 
